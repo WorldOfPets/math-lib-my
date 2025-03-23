@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>polivanov-math-lib</id>
+    <version>1.0.2</version>
+    <authors>Evgen Polivanov</authors>
+    <description>A simple math library.</description>
+    <tags>math</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\net6.0\*.dll" target="lib\net6.0" />
+  </files>
+</package>

@@ -25,7 +25,10 @@ jobs:
       run: dotnet restore  # Восстанавливаем зависимости
 
     - name: Build
-      run: dotnet build --configuration Debug  # Собираем проект
+      run: dotnet build -c Release  # Собираем проект
+    
+    - name: Pack
+      run: dotnet pack -c Release
     
     - name: Publish to NuGet
-      run: dotnet nuget push **/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
+      run: dotnet nuget push bin\Release\*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
