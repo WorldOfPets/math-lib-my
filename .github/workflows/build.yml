@@ -26,3 +26,6 @@ jobs:
 
     - name: Build
       run: dotnet build --configuration Debug  # Собираем проект
+    
+    - name: Publish to NuGet
+      run: dotnet nuget push **/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
