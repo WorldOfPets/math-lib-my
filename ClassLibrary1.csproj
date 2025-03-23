@@ -7,7 +7,7 @@
     <PackAsTool>True</PackAsTool>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>polivanov-math-lib</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Title>MathLibMy</Title>
     <Authors>Evgen Polivanov</Authors>
     <RepositoryUrl>https://github.com/WorldOfPets/math-lib-my</RepositoryUrl>
